@@ -6,6 +6,7 @@ This is the sescond project for FWD Embedded Systems Professional Track that tri
 - Three LEDs for cars - Green, Yellow, and Red, connected on port A, pins 0, 1, and 2
 - Three LEDs for pedestrians - Green, Yellow, and Red, connected on port B, pins 0, 1, and 2
 - Software requirements:
+## Mechanism
 ### In normal mode:
 Cars' LEDs will be changed every five seconds starting from Green then yellow then red then yellow then Green.
 The Yellow LED will blink for five seconds before moving to Green or Red LEDs.
