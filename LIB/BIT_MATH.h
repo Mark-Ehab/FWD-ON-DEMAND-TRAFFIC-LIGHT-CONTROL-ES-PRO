@@ -12,7 +12,7 @@
 
 #define SET_BIT(Copy_u8Reg,Copy_u8Pin) 		Copy_u8Reg |= (1<<(Copy_u8Pin))
 #define CLR_BIT(Copy_u8Reg,Copy_u8Pin) 		Copy_u8Reg &= ~(1<<(Copy_u8Pin))
-#define GET_BIT(Copy_u8Reg,Copy_u8Pin)	    ((Copy_u8Reg>>Copy_u8Pin) & (1))
+#define GET_BIT(Copy_u8Reg,Copy_u8Pin)	    ((Copy_u8Reg>>Copy_u8Pin) & (0x01))
 #define TOGGLE_BIT(Copy_u8Reg,Copy_u8Pin)	Copy_u8Reg ^= (1<<(Copy_u8Pin))
 //#define GET_BIT(Copy_u8reg,Copy_u8pin)		((Copy_u8reg>>Copy_u8pin)&0x01)
 

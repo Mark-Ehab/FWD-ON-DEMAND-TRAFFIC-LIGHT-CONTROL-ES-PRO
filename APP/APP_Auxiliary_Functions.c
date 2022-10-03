@@ -171,29 +171,52 @@ void APP_AUX_voidPedestriansMode(void)
 		APP_AUX_vidPedTurnOnOrOffGreenLed(APP_AUX_LED_ON);
 		Timer_u8Timer0SetBusyWait(5000);
 		//_delay_ms (5000);
+
+		/* Turn Off Car Red LED then Blink Both Yellow LEDs for 5 Secs while Pedestrian Green LED is still On */
+		APP_AUX_vidCarTurnOnOrOffRedLed(APP_AUX_LED_OFF);
+		APP_AUX_vidCarAndPedBlinkYellowLed();
+
+		/* Turn Off Pedestrian Green LED and Turn On both Pedestrian Red LED and Car Green LED for 5 Secs then exit Pedestrians Mode */
+		APP_AUX_vidPedTurnOnOrOffGreenLed(APP_AUX_LED_OFF);
+		APP_AUX_vidPedTurnOnOrOffRedLed(APP_AUX_LED_ON);
+		APP_AUX_vidCarTurnOnOrOffGreenLed(APP_AUX_LED_ON);
+		Timer_u8Timer0SetBusyWait(5000);
+		//_delay_ms (5000);
+		APP_AUX_vidPedTurnOnOrOffRedLed(APP_AUX_LED_OFF);
+		APP_AUX_vidCarTurnOnOrOffGreenLed(APP_AUX_LED_OFF);
+		APP_AUX_vidCarTurnOnOrOffRedLed(APP_AUX_LED_ON);
 	}
 	else if(Global_u8CarGreenLedCurrentState == APP_AUX_LED_ON || Global_u8CarYellowLedCurrentState == APP_AUX_LED_ON)
 	{
+		u8 Local_u8CurrentCarGreenLedState = Global_u8CarGreenLedCurrentState ;
+
 		/* Turn On Pedestrians Red LED and Both Yellow LEDs Blink for 5 Secs */
 		APP_AUX_vidCarTurnOnOrOffGreenLed(APP_AUX_LED_OFF);
 		APP_AUX_vidPedTurnOnOrOffRedLed(APP_AUX_LED_ON);
 		APP_AUX_vidCarAndPedBlinkYellowLed();
+
 		/* Turn Off Pedestrian Red LED and Turn On both Pedestrian Red LED and Car Green LED for 5 Secs */
 		APP_AUX_vidPedTurnOnOrOffRedLed(APP_AUX_LED_OFF);
 		APP_AUX_vidPedTurnOnOrOffGreenLed(APP_AUX_LED_ON);
 		APP_AUX_vidCarTurnOnOrOffRedLed(APP_AUX_LED_ON);
 		Timer_u8Timer0SetBusyWait(5000);
 		//_delay_ms (5000);
+
+		/* Turn Off Car Red LED then Blink Both Yellow LEDs for 5 Secs while Pedestrian Green LED is still On */
+		APP_AUX_vidCarTurnOnOrOffRedLed(APP_AUX_LED_OFF);
+		APP_AUX_vidCarAndPedBlinkYellowLed();
+
+		/* Turn Off Pedestrian Green LED and Turn On both Pedestrian Red LED and Car Green LED for 5 Secs then exit Pedestrians Mode */
+		APP_AUX_vidPedTurnOnOrOffGreenLed(APP_AUX_LED_OFF);
+		APP_AUX_vidPedTurnOnOrOffRedLed(APP_AUX_LED_ON);
+		APP_AUX_vidCarTurnOnOrOffGreenLed(APP_AUX_LED_ON);
+		Timer_u8Timer0SetBusyWait(5000);
+		//_delay_ms (5000);
+		APP_AUX_vidPedTurnOnOrOffRedLed(APP_AUX_LED_OFF);
+		APP_AUX_vidCarTurnOnOrOffGreenLed(APP_AUX_LED_OFF);
+		if (Local_u8CurrentCarGreenLedState == APP_AUX_LED_ON )
+		{
+			APP_AUX_vidCarTurnOnOrOffGreenLed(APP_AUX_LED_ON);
+		}
 	}
-	/* Turn Off Car Red LED then Blink Both Yellow LEDs for 5 Secs while Pedestrian Green LED is still On */
-	APP_AUX_vidCarTurnOnOrOffRedLed(APP_AUX_LED_OFF);
-	APP_AUX_vidCarAndPedBlinkYellowLed();
-	/* Turn Off Pedestrian Green LED and Turn On both Pedestrian Red LED and Car Green LED for 5 Secs then exit Pedestrians Mode */
-	APP_AUX_vidPedTurnOnOrOffGreenLed(APP_AUX_LED_OFF);
-	APP_AUX_vidPedTurnOnOrOffRedLed(APP_AUX_LED_ON);
-	APP_AUX_vidCarTurnOnOrOffGreenLed(APP_AUX_LED_ON);
-	Timer_u8Timer0SetBusyWait(5000);
-	//_delay_ms (5000);
-	APP_AUX_vidPedTurnOnOrOffRedLed(APP_AUX_LED_OFF);
-	APP_AUX_vidCarTurnOnOrOffGreenLed(APP_AUX_LED_OFF);
 }

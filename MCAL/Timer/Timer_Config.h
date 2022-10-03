@@ -43,13 +43,8 @@
 /* Default : clkI/O/(No prescaling)  ----> 1      			      */
 /*                                                                */
 /******************************************************************/
-#define TIMER_TIMER0_PRESCALER 1
+#define TIMER_TIMER0_PRESCALER 1024
 
-///* Set Timer0 preload value */
-//#define TIMER_TIMER0_PRELOAD_VAL        0
-//
-///* Set Timer0 compare match value */
-//#define TIMER_TIMER0_COMPARE_MATCH_VAL  0
 
 /************************ Timer 1 & Timer 2 ---> To Be Continued :) ************/
 /* Timer 1 */

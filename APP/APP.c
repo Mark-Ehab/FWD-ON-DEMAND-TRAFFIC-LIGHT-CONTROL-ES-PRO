@@ -8,9 +8,9 @@
 #include "../LIB/STD_TYPES.h"
 
 #include "../MCAL/DIO/DIO_Interface.h"
-#include "../HAL/LED/LED_Interface.h"
 #include "../MCAL/GIE/GIE_Interface.h"
 #include "../MCAL/EXTI/EXTI_Interface.h"
+#include "../HAL/LED/LED_Interface.h"
 #include "../HAL/Button/Button_Interface.h"
 #include "APP_Auxiliary_Functions.h"
 #include "APP.h"

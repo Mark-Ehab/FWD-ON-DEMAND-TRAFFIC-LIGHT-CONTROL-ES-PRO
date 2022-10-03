@@ -21,7 +21,7 @@ void Button_vidButtonInit(void)
 {
 	/* Configure data direction of pedestrians button pin as INPUT */
 	DIO_u8setPinDir(BTN_PED_PORT,BTN_PED_PIN,INPUT);
-	/* Configure pedestrians button pin as PULLUP resistor */
-	DIO_u8setPinVal(BTN_PED_PORT,BTN_PED_PIN,HIGH);
+//	/* Configure pedestrians button pin as PULLUP resistor */
+//	DIO_u8setPinVal(BTN_PED_PORT,BTN_PED_PIN,HIGH);
 }
 
