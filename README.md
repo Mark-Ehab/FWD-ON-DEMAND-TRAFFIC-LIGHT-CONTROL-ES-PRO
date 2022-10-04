@@ -16,5 +16,8 @@ The Yellow LED will blink for five seconds before moving to Green or Red LEDs.
 4. At the end of the two states, the cars' Red LED will be off and both Yellow LEDs start blinking for 5 seconds and the pedestrian's Green LED is still on.
 5. After the five seconds the pedestrian Green LED will be off and both the pedestrian Red LED and the cars' Green LED will be on.
 6. Traffic lights signals are going to the normal mode again.
+
+## System flowchart 
+![OnDemandTrafficLightFlowChart](https://user-images.githubusercontent.com/72959499/193889037-dfa1ee15-72df-4e7f-92c0-7203217c0352.png)
 ## Clarifing videos and documentation 
 ### [Click Here For Videos and Documentaion](https://drive.google.com/drive/folders/1r5-yCQkoHnk9iywSS6tAkT0hyzMqenp8?usp=sharing)
