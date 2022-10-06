@@ -16,12 +16,12 @@
 
 							/* Functions Prototypes */
 
-void APP_AUX_vidCarBlinkYellowLed(void);
-void APP_AUX_vidCarAndPedBlinkYellowLed(void);
-void APP_AUX_vidCarTurnOnOrOffGreenLed(u8 Copy_u8State);
-void APP_AUX_vidCarTurnOnOrOffRedLed(u8 Copy_u8State);
-void APP_AUX_vidPedTurnOnOrOffGreenLed(u8 Copy_u8State);
-void APP_AUX_vidPedTurnOnOrOffRedLed(u8 Copy_u8State);
+static void APP_AUX_vidCarBlinkYellowLed(void);
+static void APP_AUX_vidCarAndPedBlinkYellowLed(void);
+static void APP_AUX_vidCarTurnOnOrOffGreenLed(u8 Copy_u8State);
+static void APP_AUX_vidCarTurnOnOrOffRedLed(u8 Copy_u8State);
+static void APP_AUX_vidPedTurnOnOrOffGreenLed(u8 Copy_u8State);
+static void APP_AUX_vidPedTurnOnOrOffRedLed(u8 Copy_u8State);
 void APP_AUX_voidNormalMode(void);
 void APP_AUX_voidPedestriansMode(void);
 
